@@ -1,0 +1,44 @@
+{
+  "name": "arkanoidjs",
+  "version": "1.0.0",
+  "description": "Arkanoid game in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/dist/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/",
+      "__test__"
+    ],
+    "coverageDirectory": "./__test__/reporter"
+  },
+  "keywords": [
+    "javascript",
+    "game",
+    "arkanoid"
+  ],
+  "author": "Nelson Luiz P.C de Oliveira",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "jest": "^23.3.0",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0"
+  }
+}
