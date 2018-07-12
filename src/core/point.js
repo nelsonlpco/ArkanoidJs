@@ -27,7 +27,7 @@ class Point {
     return this.y;
   }
 
-  get Point() {
+  get Coord() {
     return { x: this.X, y: this.Y };
   }
 }

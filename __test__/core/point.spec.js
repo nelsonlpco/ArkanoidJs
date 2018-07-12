@@ -5,11 +5,11 @@ describe('Point', () => {
     const point = new Point(2, 3);
     const point2 = new Point('2', '3');
 
-    expect(point.Point).toEqual({ x: 2, y: 3 });
+    expect(point.Coord).toEqual({ x: 2, y: 3 });
     expect(point.X).toEqual(2);
     expect(point.Y).toEqual(3);
 
-    expect(point2.Point).toEqual({ x: 2, y: 3 });
+    expect(point2.Coord).toEqual({ x: 2, y: 3 });
     expect(point2.X).toEqual(2);
     expect(point2.Y).toEqual(3);
   });
