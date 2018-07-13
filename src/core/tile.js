@@ -1,10 +1,24 @@
 import Point from './point';
+import RGBColor from './rgb-color';
 
 class Tile {
-  constructor(point, width, height) {
+  constructor(point, color, width, height) {
+    this.Color = color;
     this.Point = point;
     this.Width = width;
     this.Height = height;
+  }
+
+  set Color(value) {
+    if (!(value instanceof RGBColor)) {
+      throw new Error('the color is invalid');
+    }
+
+    this.color = value;
+  }
+
+  get Color() {
+    return this.color;
   }
 
   set Point(value) {

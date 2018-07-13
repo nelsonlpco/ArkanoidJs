@@ -30,6 +30,13 @@ class Point {
   get Coord() {
     return { x: this.X, y: this.Y };
   }
+
+  static distancia(a, b) {
+    const dx = a.x - b.x;
+    const dy = a.y - b.y;
+
+    return Math.sqrt(dx * dx + dy * dy);
+  }
 }
 
 export default Point;
